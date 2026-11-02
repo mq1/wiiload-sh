@@ -89,6 +89,6 @@ header_fmt="$(printf 'HAXX\\000\\005\\%03o\\%03o\\%03o\\%03o\\%03o\\%03o\\%03o\\
     $((uncompressed_size >> 8 & 0xff)) \
     $((uncompressed_size & 0xff)))"
 
-printf '%b' header_fmt      # header as bytes
+printf '%b' "$header_fmt"   # header as bytes
 cat "$filename"             # file contents
 printf '%s\000' "$basename" # file name with null terminator
