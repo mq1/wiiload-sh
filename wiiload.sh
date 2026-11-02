@@ -1,4 +1,7 @@
 #!/bin/sh
+# SPDX-FileCopyrightText: 2026 Manuel Quarneti <mq1@ik.me>
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
 set -eu
 
 # Compress file with zlib -9 using either perl or python
